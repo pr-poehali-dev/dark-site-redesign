@@ -2,39 +2,35 @@ const Footer = () => {
   const scrollTo = (id: string) => document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
 
   return (
-    <footer style={{ backgroundColor: '#0e0c0a', borderTop: '1px solid rgba(180,145,60,0.12)' }}>
-      <div className="max-w-7xl mx-auto px-6 py-8">
+    <footer style={{ backgroundColor: '#0a0806', borderTop: '1px solid rgba(180,145,60,0.12)' }}>
+      <div className="max-w-7xl mx-auto px-8 py-10">
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
-          <div className="flex items-center gap-3">
-            <div className="w-8 h-8 flex items-center justify-center" style={{ border: '1px solid #b4913c' }}>
-              <span style={{ color: '#b4913c', fontFamily: 'Cormorant Garamond, serif', fontWeight: 700, fontSize: 15 }}>D</span>
+
+          <div className="flex items-center gap-4">
+            <div style={{ width: 34, height: 34, border: '1px solid rgba(180,145,60,0.5)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+              <span style={{ color: '#c9a84c', fontFamily: 'Old Standard TT, serif', fontWeight: 700, fontSize: 17 }}>Д</span>
             </div>
             <div>
-              <div style={{ color: '#fff', fontFamily: 'Cormorant Garamond, serif', fontSize: 12, letterSpacing: '0.08em' }}>ДМИТРИЕВ И ПАРТНЁРЫ</div>
-              <div style={{ color: '#b4913c', fontSize: 9, letterSpacing: '0.2em' }}>АДВОКАТСКОЕ БЮРО</div>
+              <div style={{ color: '#e8e0d0', fontFamily: 'Old Standard TT, serif', fontSize: 13, letterSpacing: '0.1em' }}>Дмитриев и Партнёры</div>
+              <div style={{ color: '#5a5040', fontFamily: 'Oswald, sans-serif', fontWeight: 300, fontSize: 9, letterSpacing: '0.3em', textTransform: 'uppercase' }}>Адвокатское бюро</div>
             </div>
           </div>
 
-          <nav className="flex items-center gap-6 flex-wrap justify-center">
-            {[
-              { l: 'Услуги', id: 'services' },
-              { l: 'Кейсы', id: 'cases' },
-              { l: 'О бюро', id: 'about' },
-              { l: 'Контакты', id: 'contact' },
-            ].map((item) => (
+          <nav className="flex items-center gap-7 flex-wrap justify-center">
+            {[{ l: 'Услуги', id: 'services' }, { l: 'Кейсы', id: 'cases' }, { l: 'О бюро', id: 'about' }, { l: 'Контакты', id: 'contact' }].map((item) => (
               <button
                 key={item.id}
                 onClick={() => scrollTo(item.id)}
-                className="hover:text-[#b4913c] transition-colors"
-                style={{ color: '#6a6060', fontSize: 12, letterSpacing: '0.08em' }}
+                className="hover:text-[#c9a84c] transition-colors"
+                style={{ color: '#5a5040', fontFamily: 'Oswald, sans-serif', fontWeight: 300, fontSize: 11, letterSpacing: '0.2em', textTransform: 'uppercase' }}
               >
                 {item.l}
               </button>
             ))}
           </nav>
 
-          <div style={{ color: '#4a4540', fontSize: 12 }}>
-            © 2024 Дмитриев и Партнёры. Все права защищены.
+          <div style={{ color: '#3a3028', fontFamily: 'Oswald, sans-serif', fontWeight: 300, fontSize: 11, letterSpacing: '0.06em' }}>
+            © 2004–2024 Дмитриев и Партнёры
           </div>
         </div>
       </div>

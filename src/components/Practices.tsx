@@ -1,54 +1,77 @@
 import Icon from '@/components/ui/icon';
 
 const practices = [
-  { icon: 'Scale', label: 'УГОЛОВНАЯ\nЗАЩИТА' },
-  { icon: 'Briefcase', label: 'АРБИТРАЖНЫЕ\nСПОРЫ' },
-  { icon: 'Building2', label: 'ЗАЩИТА\nБИЗНЕСА' },
-  { icon: 'Users', label: 'СЕМЕЙНЫЕ\nСПОРЫ' },
-  { icon: 'Receipt', label: 'НАЛОГОВЫЕ\nДЕЛА' },
+  { icon: 'Scale', label: 'Уголовная защита', sub: 'Следствие и суд' },
+  { icon: 'Briefcase', label: 'Арбитражные споры', sub: 'Бизнес-конфликты' },
+  { icon: 'Building2', label: 'Защита бизнеса', sub: 'Корпоративное право' },
+  { icon: 'Users', label: 'Семейные споры', sub: 'Раздел, алименты' },
+  { icon: 'Receipt', label: 'Налоговые дела', sub: 'ФНС и суды' },
 ];
 
 const Practices = () => {
-  const scrollTo = (id: string) => document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
-
   return (
-    <section id="services" style={{ backgroundColor: '#171411', borderTop: '1px solid rgba(180,145,60,0.12)', borderBottom: '1px solid rgba(180,145,60,0.12)' }}>
-      {/* Title row */}
-      <div className="flex items-center justify-center gap-4 py-8">
-        <div style={{ flex: 1, height: 1, maxWidth: 120, backgroundColor: '#b4913c', marginLeft: 'auto', opacity: 0.5 }} />
-        <span style={{ color: '#c8c0b0', fontSize: 12, letterSpacing: '0.35em', textTransform: 'uppercase' }}>ПРАКТИКИ</span>
-        <div style={{ flex: 1, height: 1, maxWidth: 120, backgroundColor: '#b4913c', marginRight: 'auto', opacity: 0.5 }} />
+    <section id="services" style={{
+      backgroundColor: '#0d0b09',
+      borderTop: '1px solid rgba(180,145,60,0.15)',
+      borderBottom: '1px solid rgba(180,145,60,0.15)',
+    }}>
+      {/* Заголовок */}
+      <div className="flex items-center justify-center gap-6 pt-14 pb-10 px-8">
+        <span className="gold-line flex-1" style={{ maxWidth: 100 }} />
+        <span style={{
+          fontFamily: 'Oswald, sans-serif',
+          fontWeight: 300,
+          fontSize: 11,
+          letterSpacing: '0.42em',
+          textTransform: 'uppercase',
+          color: '#a09080',
+        }}>
+          Практики
+        </span>
+        <span className="gold-line flex-1" style={{ maxWidth: 100 }} />
       </div>
 
-      {/* Icons row */}
-      <div className="max-w-5xl mx-auto px-6 pb-12">
-        <div className="grid grid-cols-2 md:grid-cols-5 gap-2">
+      {/* Карточки */}
+      <div className="max-w-6xl mx-auto px-8 pb-14">
+        <div className="grid grid-cols-2 md:grid-cols-5 gap-px" style={{ backgroundColor: 'rgba(180,145,60,0.08)' }}>
           {practices.map((p, i) => (
-            <button
+            <div
               key={i}
-              onClick={() => scrollTo('services-detail')}
-              className="flex flex-col items-center gap-4 py-8 px-4 group transition-all duration-200 hover:bg-[rgba(180,145,60,0.06)]"
-              style={{ border: '1px solid transparent' }}
-              onMouseEnter={(e) => (e.currentTarget.style.borderColor = 'rgba(180,145,60,0.25)')}
-              onMouseLeave={(e) => (e.currentTarget.style.borderColor = 'transparent')}
+              className="group flex flex-col items-center gap-5 py-10 px-6 cursor-default transition-all duration-300"
+              style={{ backgroundColor: '#0d0b09' }}
+              onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = '#131008')}
+              onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = '#0d0b09')}
             >
               <div
-                className="w-14 h-14 flex items-center justify-center transition-all duration-200 group-hover:scale-110"
-                style={{
-                  border: '1.5px solid rgba(180,145,60,0.5)',
-                  borderRadius: 2,
-                  color: '#b4913c',
-                }}
+                className="w-[52px] h-[52px] flex items-center justify-center transition-all duration-300 group-hover:scale-110"
+                style={{ border: '1px solid rgba(180,145,60,0.35)', color: '#c9a84c' }}
               >
-                <Icon name={p.icon} size={26} />
+                <Icon name={p.icon} size={22} />
               </div>
-              <span
-                className="text-center text-xs font-semibold tracking-widest whitespace-pre-line group-hover:text-[#b4913c] transition-colors"
-                style={{ color: '#c8c0b0', letterSpacing: '0.12em', lineHeight: 1.5 }}
-              >
-                {p.label}
-              </span>
-            </button>
+              <div className="text-center">
+                <div style={{
+                  fontFamily: 'Old Standard TT, serif',
+                  color: '#d8d0c0',
+                  fontSize: 14,
+                  fontWeight: 400,
+                  lineHeight: 1.3,
+                  marginBottom: 5,
+                  transition: 'color 0.2s',
+                }} className="group-hover:text-[#c9a84c]">
+                  {p.label}
+                </div>
+                <div style={{
+                  fontFamily: 'Oswald, sans-serif',
+                  fontWeight: 300,
+                  color: '#5a5040',
+                  fontSize: 10,
+                  letterSpacing: '0.15em',
+                  textTransform: 'uppercase',
+                }}>
+                  {p.sub}
+                </div>
+              </div>
+            </div>
           ))}
         </div>
       </div>
