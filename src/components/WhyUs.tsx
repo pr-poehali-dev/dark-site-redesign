@@ -33,7 +33,7 @@ const WhyUs = () => {
               <div className="h-px w-12" style={{ backgroundColor: 'hsl(43,74%,55%)' }} />
               <span className="text-[hsl(43,74%,55%)] text-xs tracking-[0.3em] uppercase">Преимущества</span>
             </div>
-            <h2 className="text-4xl md:text-5xl font-bold text-white leading-tight" style={{ fontFamily: 'Playfair Display, serif' }}>
+            <h2 className="text-4xl md:text-5xl font-bold text-white leading-tight" style={{ fontFamily: 'Cormorant Garamond, serif' }}>
               Почему выбирают<br />
               <span style={{
                 background: 'linear-gradient(135deg, hsl(43,74%,55%), hsl(43,80%,68%))',
@@ -69,7 +69,7 @@ const WhyUs = () => {
                 >
                   <Icon name={reason.icon} size={18} className="text-[hsl(43,74%,55%)]" />
                 </div>
-                <h3 className="text-white font-semibold mb-2" style={{ fontFamily: 'Playfair Display, serif' }}>
+                <h3 className="text-white font-semibold mb-2" style={{ fontFamily: 'Cormorant Garamond, serif' }}>
                   {reason.title}
                 </h3>
                 <p className="text-[hsl(220,10%,55%)] text-sm leading-relaxed">{reason.desc}</p>

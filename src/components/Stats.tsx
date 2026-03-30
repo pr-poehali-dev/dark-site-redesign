@@ -30,12 +30,12 @@ const StatItem = ({ stat, animate }: { stat: typeof stats[0]; animate: boolean }
   return (
     <div className="text-center p-8 border-r last:border-r-0 border-[hsl(220,15%,18%)]">
       <div className="text-5xl md:text-6xl font-bold mb-2" style={{
-        fontFamily: 'Playfair Display, serif',
+        fontFamily: 'Cormorant Garamond, serif',
         color: 'hsl(43,74%,55%)'
       }}>
         {animate ? count : 0}{stat.suffix}
       </div>
-      <div className="text-white text-lg font-medium mb-1" style={{ fontFamily: 'Playfair Display, serif' }}>
+      <div className="text-white text-lg font-medium mb-1" style={{ fontFamily: 'Cormorant Garamond, serif' }}>
         {stat.label}
       </div>
       <div className="text-[hsl(220,10%,50%)] text-sm">{stat.desc}</div>

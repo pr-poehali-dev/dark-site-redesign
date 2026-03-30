@@ -18,7 +18,7 @@ const About = () => {
               <span className="text-[hsl(43,74%,55%)] text-xs tracking-[0.3em] uppercase">Об адвокате</span>
             </div>
 
-            <h2 className="text-4xl md:text-5xl font-bold text-white mb-6 leading-tight" style={{ fontFamily: 'Playfair Display, serif' }}>
+            <h2 className="text-4xl md:text-5xl font-bold text-white mb-6 leading-tight" style={{ fontFamily: 'Cormorant Garamond, serif' }}>
               Дмитрий Александрович<br />
               <span style={{
                 background: 'linear-gradient(135deg, hsl(43,74%,55%), hsl(43,80%,68%))',
@@ -80,7 +80,7 @@ const About = () => {
               }}
             >
               <div className="text-3xl font-bold mb-1" style={{
-                fontFamily: 'Playfair Display, serif',
+                fontFamily: 'Cormorant Garamond, serif',
                 color: 'hsl(43,74%,55%)'
               }}>15+</div>
               <div className="text-white text-sm">лет в профессии</div>

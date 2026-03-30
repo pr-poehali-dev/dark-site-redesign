@@ -28,7 +28,7 @@ const Contact = () => {
             <span className="text-[hsl(43,74%,55%)] text-xs tracking-[0.3em] uppercase">Контакты</span>
             <div className="h-px w-12" style={{ backgroundColor: 'hsl(43,74%,55%)' }} />
           </div>
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-4" style={{ fontFamily: 'Playfair Display, serif' }}>
+          <h2 className="text-4xl md:text-5xl font-bold text-white mb-4" style={{ fontFamily: 'Cormorant Garamond, serif' }}>
             Получите консультацию
           </h2>
           <p className="text-[hsl(220,10%,55%)] max-w-xl mx-auto">
@@ -95,7 +95,7 @@ const Contact = () => {
                 >
                   <Icon name="Check" size={28} className="text-[hsl(43,74%,55%)]" />
                 </div>
-                <h3 className="text-white text-xl font-semibold mb-2" style={{ fontFamily: 'Playfair Display, serif' }}>
+                <h3 className="text-white text-xl font-semibold mb-2" style={{ fontFamily: 'Cormorant Garamond, serif' }}>
                   Заявка отправлена
                 </h3>
                 <p className="text-[hsl(220,10%,55%)] text-sm">

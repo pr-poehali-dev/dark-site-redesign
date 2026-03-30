@@ -7,10 +7,10 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="flex items-center gap-3">
             <div className="w-8 h-8 flex items-center justify-center" style={{ border: '1px solid #b4913c' }}>
-              <span style={{ color: '#b4913c', fontFamily: 'Playfair Display, serif', fontWeight: 700, fontSize: 15 }}>D</span>
+              <span style={{ color: '#b4913c', fontFamily: 'Cormorant Garamond, serif', fontWeight: 700, fontSize: 15 }}>D</span>
             </div>
             <div>
-              <div style={{ color: '#fff', fontFamily: 'Playfair Display, serif', fontSize: 12, letterSpacing: '0.08em' }}>ДМИТРИЕВ И ПАРТНЁРЫ</div>
+              <div style={{ color: '#fff', fontFamily: 'Cormorant Garamond, serif', fontSize: 12, letterSpacing: '0.08em' }}>ДМИТРИЕВ И ПАРТНЁРЫ</div>
               <div style={{ color: '#b4913c', fontSize: 9, letterSpacing: '0.2em' }}>АДВОКАТСКОЕ БЮРО</div>
             </div>
           </div>

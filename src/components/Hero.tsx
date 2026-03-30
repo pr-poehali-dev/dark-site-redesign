@@ -45,8 +45,8 @@ const Hero = () => {
           </div>
 
           {/* Heading */}
-          <h1 style={{ fontFamily: 'Playfair Display, serif', color: '#fff', fontWeight: 700, lineHeight: 1.08, marginBottom: 20 }}
-            className="text-5xl md:text-6xl xl:text-7xl">
+          <h1 style={{ fontFamily: 'Cormorant Garamond, serif', color: '#fff', fontWeight: 600, lineHeight: 1.08, marginBottom: 20 }}
+            className="text-6xl md:text-7xl xl:text-8xl">
             ЗАЩИЩАЕМ<br />ВАШИ<br />
             <span style={{ color: '#b4913c' }}>ИНТЕРЕСЫ</span><br />В СУДЕ
           </h1>
@@ -61,7 +61,7 @@ const Hero = () => {
             {stats.map((s, i) => (
               <div key={i} className="flex items-center">
                 <div className="text-center px-5 first:pl-0">
-                  <div style={{ fontFamily: 'Playfair Display, serif', color: '#b4913c', fontSize: 36, fontWeight: 700, lineHeight: 1 }}>
+                  <div style={{ fontFamily: 'Cormorant Garamond, serif', color: '#b4913c', fontSize: 42, fontWeight: 700, lineHeight: 1 }}>
                     {s.num}
                   </div>
                   <div style={{ color: '#8a8070', fontSize: 12, marginTop: 4, letterSpacing: '0.02em' }}>{s.label}</div>

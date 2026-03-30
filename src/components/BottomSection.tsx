@@ -96,7 +96,7 @@ const BottomSection = () => {
                   <div className="absolute inset-0 p-3 flex flex-col justify-end">
                     <div
                       style={{
-                        fontFamily: 'Playfair Display, serif',
+                        fontFamily: 'Cormorant Garamond, serif',
                         color: '#fff',
                         fontSize: 11,
                         fontWeight: 700,
@@ -133,7 +133,7 @@ const BottomSection = () => {
                 <div className="w-14 h-14 flex items-center justify-center mb-4" style={{ border: '1px solid #b4913c' }}>
                   <Icon name="Check" size={24} style={{ color: '#b4913c' }} />
                 </div>
-                <p style={{ color: '#fff', fontFamily: 'Playfair Display, serif', fontSize: 18, marginBottom: 8 }}>Заявка отправлена</p>
+                <p style={{ color: '#fff', fontFamily: 'Cormorant Garamond, serif', fontSize: 18, marginBottom: 8 }}>Заявка отправлена</p>
                 <p style={{ color: '#8a8070', fontSize: 13 }}>Свяжемся с вами в течение дня</p>
               </div>
             ) : (

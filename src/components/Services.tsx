@@ -49,7 +49,7 @@ const Services = () => {
             <span className="text-[hsl(43,74%,55%)] text-xs tracking-[0.3em] uppercase">Практика</span>
             <div className="h-px w-12" style={{ backgroundColor: 'hsl(43,74%,55%)' }} />
           </div>
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-4" style={{ fontFamily: 'Playfair Display, serif' }}>
+          <h2 className="text-4xl md:text-5xl font-bold text-white mb-4" style={{ fontFamily: 'Cormorant Garamond, serif' }}>
             Области права
           </h2>
           <p className="text-[hsl(220,10%,55%)] max-w-xl mx-auto">
@@ -73,7 +73,7 @@ const Services = () => {
               >
                 <Icon name={service.icon} size={22} className="text-[hsl(43,74%,55%)]" />
               </div>
-              <h3 className="text-xl font-semibold text-white mb-3" style={{ fontFamily: 'Playfair Display, serif' }}>
+              <h3 className="text-xl font-semibold text-white mb-3" style={{ fontFamily: 'Cormorant Garamond, serif' }}>
                 {service.title}
               </h3>
               <p className="text-[hsl(220,10%,55%)] text-sm leading-relaxed mb-5">

@@ -37,10 +37,10 @@ const Header = () => {
       <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between gap-6">
         <button onClick={() => scrollTo('hero')} className="flex items-center gap-3 flex-shrink-0">
           <div className="w-10 h-10 flex items-center justify-center flex-shrink-0" style={{ border: '1.5px solid #b4913c' }}>
-            <span style={{ color: '#b4913c', fontFamily: 'Playfair Display, serif', fontWeight: 700, fontSize: 18 }}>D</span>
+            <span style={{ color: '#b4913c', fontFamily: 'Cormorant Garamond, serif', fontWeight: 700, fontSize: 18 }}>D</span>
           </div>
           <div className="text-left">
-            <div style={{ color: '#fff', fontFamily: 'Playfair Display, serif', fontWeight: 600, fontSize: 13, letterSpacing: '0.08em', lineHeight: 1.2 }}>
+            <div style={{ color: '#fff', fontFamily: 'Cormorant Garamond, serif', fontWeight: 600, fontSize: 13, letterSpacing: '0.08em', lineHeight: 1.2 }}>
               ДМИТРИЕВ И ПАРТНЁРЫ
             </div>
             <div style={{ color: '#b4913c', fontSize: 9, letterSpacing: '0.25em', textTransform: 'uppercase', lineHeight: 1.4 }}>
